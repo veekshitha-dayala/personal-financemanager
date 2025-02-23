@@ -1,0 +1,106 @@
+/* Full-screen dashboard */
+.dashboard-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498DB, #8E44AD);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .dashboard-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logout-btn {
+    background-color: #ff7675; /* Soft red */
+    color: white;
+    padding: 10px 20px;
+    border: 20px;;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width:200px;
+   
+}
+
+.logout-btn:hover {
+    background-color: #d63031;
+}
+
+  
+  /* Balance Section */
+  .balance-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Transactions */
+  .transactions {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .transactions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transactions li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Transaction Colors */
+  .transactions .income {
+    color: lightgreen;
+  }
+  
+  .transactions .expense {
+    color: red;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .add-btn {
+    background: #27ae60;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .add-btn.expense {
+    background: #e74c3c;
+  }
+  
+  .add-btn:hover {
+    opacity: 0.8;
+  }
+  

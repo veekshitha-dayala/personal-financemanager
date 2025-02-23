@@ -1,0 +1,176 @@
+/* Centering the Login Box */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Full-screen Background Video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Logo */
+.login-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Login Box */
+.login-box {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.15); /* Soft transparent effect */
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px); /* Glassmorphism effect */
+}
+
+/* Title */
+h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 40px 12px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.input-container input::placeholder {
+  color: lightgray;
+}
+
+/* Icons Inside Input */
+.input-container .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #8E44AD;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #732D91;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot-password-link a {
+  color: #f0c419;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password-link a:hover {
+  text-decoration: underline;
+}
+
+/* Signup Link */
+.SignUp-link {
+  margin-top: 15px;
+  color: #f0c419;
+}
+
+.SignUp-link a {
+  color: #f0c419;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.SignUp-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-logo {
+    width: 70px;
+  }
+
+  .input-container input {
+    font-size: 14px;
+    padding: 10px 35px 10px 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 15px;
+  }
+
+  .login-logo {
+    width: 60px;
+  }
+
+  .input-container input {
+    font-size: 14px;
+    padding: 8px 30px 8px 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .forgot-password-link,
+  .SignUp-link {
+    font-size: 12px;
+  }
+}
